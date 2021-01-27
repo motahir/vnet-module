@@ -25,5 +25,5 @@ variable "subnet_names" {
 }
 
 variable "env" {
-  default = "test"
+  default = ""
 }

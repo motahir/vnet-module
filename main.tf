@@ -3,8 +3,7 @@ resource "azurerm_resource_group" "rg" {
   location = "${var.location}"
 
   tags = {
-    environment = "${var.env}"
-    costcenter  = "${var.name}"
+    Environment = "${var.location}"
   }
 }
 
@@ -15,8 +14,7 @@ resource "azurerm_virtual_network" "vnet" {
   location            = "${azurerm_resource_group.rg.location}"
 
   tags = {
-    environment = "${var.env}"
-    costcenter  = "${var.name}"
+    Environment = "${var.location}"
   }
 }
 

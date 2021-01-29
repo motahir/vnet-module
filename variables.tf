@@ -7,12 +7,12 @@ variable "location" {
 }
 
 variable "address_space" {
-  type    = "list"
+  type    = list
   default = []
 }
 
 variable "service_endpoints" {
-  type    = "list"
+  type    = list
   default = []
 }
 
